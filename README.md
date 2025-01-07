@@ -1,11 +1,10 @@
-# YOUR PROJECT TITLE
+# SGHealthNews
 #### Video Demo:  <https://youtu.be/C7ywx2y7bzA>
+### Telegram News Channel: <https://t.me/+xPSlsadJxf5lNzBl>
 #### Description:
 
-SGHealthNews
-
 Overview
-This project is designed to fetch health-related news articles in Singapore using the Newscatcher API, store the data in a SQLite database, and circulate the latest articles via a Telegram bot while simultaenously updating the database. The code is written in Python and involves fetching, processing, and managing news data efficiently.
+This project is designed to fetch health-related news articles in Singapore using the Newscatcher API, store the data in a SQLite database, and circulate the latest articles via a Telegram bot while simultaenously updating the database. The code is written in Python and involves fetching, processing, and managing news data efficiently. The new
 
 Table of Contents
 1. Dependencies
