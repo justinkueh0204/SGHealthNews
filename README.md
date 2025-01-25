@@ -11,9 +11,8 @@ Table of Contents
 2. How It Works
 3. Database Schema
 4. Telegram Integration
-5. Points of Improvement
 
-
+===
 1. Dependencies
 requests
 python-telegram-bot
@@ -39,7 +38,7 @@ Database Management:
 - This also sets up an opportunity in the future to have other sources of data that can plug into datasorter.py.
 
 
-Database Schema
+3. Database Schema
 The article_table schema includes the following columns:
 
 title - Title of the news article.
@@ -53,7 +52,7 @@ date_circulated - Date when the article was circulated via Telegram.
 Removing Duplicates:
 - The code identifies and removes duplicate articles based on their links. This ensures I will always post a unique link that users can read.
 
-Telegram Integration:
+4. Telegram Integration:
 - The latest article which has date_circulated = 0 is selected from the database, and its details are formatted into a message. I send the title, excerpt, and link.
 - I have set up a Telegram bot and channel. Using POST, my app interacts with the Telegram server to then send the message through the telegram bot. My app then checks for a successful response and upon success, it updates the database to set the date_circulated to today's time. This enables me to keep track of when messages were sent while also preventing me from sending messages I've sent before.
 
